@@ -245,11 +245,6 @@ a {
     font-size: 14px;
 }
 
-
-.clearfix {
-  overflow: auto;
-}
-
 .row {
 /*    height:300px;*/
 }
@@ -267,7 +262,7 @@ a {
 /*    display: inline-block;
     position: absolute;*/
 /*    right:0;*/
-    float:left;
+    float:right;
 }
 
 .firstline{
@@ -326,6 +321,12 @@ img {
     font-family: 'Bitter', serif;
 }
 
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 /*
  * Remove text-shadow in selection highlight:
