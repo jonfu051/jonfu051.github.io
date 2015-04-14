@@ -27,6 +27,10 @@ body {
     height: 100vh;
 }
 
+a {
+    text-decoration:none;
+}
+
 .container {
     width: 100%;
     margin: 0px auto;
@@ -235,28 +239,35 @@ body {
 
 }
 
-.resumeContent {
+.mainContent {
     position: relative;
     left:50px;
     font-size: 14px;
 }
 
+
+.clearfix {
+  overflow: auto;
+}
+
 .row {
-    height:300px;
+/*    height:300px;*/
 }
 
 .resumeLeft  {
     width: 12%;
-    display: inline-block;
+/*    display: inline-block;
     position: relative;
-    left:0;
+    left:0;*/
+    float:left;
 }
 
 .resumeRight  {
     width: 88%;
-    display: inline-block;
-    position: absolute;
-    right:0;
+/*    display: inline-block;
+    position: absolute;*/
+/*    right:0;*/
+    float:left;
 }
 
 .firstline{
@@ -269,13 +280,52 @@ body {
 .title{
     font-family: Courier New;
     margin:0;
-
 }
 
 ul li {
     font-family: 'Bitter', serif;
     text-align: justify;
 }
+
+.three-colrow {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    width: 28.333333%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+.three-colrow a {
+  font-family: Courier New;
+  font-weight: bold;
+
+}
+
+.three-colrow p {
+    font-family: 'Bitter', serif;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
