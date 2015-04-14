@@ -245,24 +245,22 @@ a {
     font-size: 14px;
 }
 
-.row {
-/*    height:300px;*/
-}
-
 .resumeLeft  {
     width: 12%;
-/*    display: inline-block;
-    position: relative;
-    left:0;*/
     float:left;
 }
 
 .resumeRight  {
     width: 88%;
-/*    display: inline-block;
-    position: absolute;*/
-/*    right:0;*/
     float:right;
+}
+
+.umnLogo {
+    height:100px;
+    width:100px;
+    right:0;
+    position: absolute;
+    top: 128px;
 }
 
 .firstline{
