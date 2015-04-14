@@ -258,9 +258,10 @@ a {
 .umnLogo {
     height:100px;
     width:100px;
-    right:0;
+    right:50px;
     position: absolute;
     top: 128px;
+    box-shadow: 10px 10px 10px #888888;
 }
 
 .firstline{
