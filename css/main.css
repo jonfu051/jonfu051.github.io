@@ -327,6 +327,48 @@ img {
     clear: both;
 }
 
+.projectFrame {
+    width: 100%;
+    height: 100%;
+}
+
+.projectFrame iframe {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    width: 254px;
+    height: 145px;
+}
+
+.projectFrame:hover iframe {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+
+}
+
+.scale {
+    -webkit-transition: all 1.15s ease; /* Safari and Chrome */
+    -moz-transition: all 1.15s ease; /* Firefox */
+    -ms-transition: all 1.15s ease; /* IE 9 */
+    -o-transition: all 1.15s ease; /* Opera */
+    transition: all 1.15s ease;
+}
+
+.scale:hover {
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+     transform:scale(1.1);
+}
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
