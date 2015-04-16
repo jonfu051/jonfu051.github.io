@@ -70,7 +70,7 @@ a {
         color: #7d26cd;
 }
 
-#name {
+.homename {
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     margin-top: 25px;
@@ -78,7 +78,7 @@ a {
 
 }
 
-#jobtitle {
+.jobtitle {
     float: left;
     margin-top: 0px;
     font-family: 'Oswald', sans-serif;
@@ -90,12 +90,6 @@ a {
 
     height: 360px;
     border-radius: 50%;
-    /*-webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transfo rm: rotate(90deg);
-    */
 }
 
 #helloTag {
@@ -327,30 +321,7 @@ img {
     clear: both;
 }
 
-.projectFrame {
-    width: 100%;
-    height: 100%;
-}
-
-.projectFrame iframe {
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* IE 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
-    width: 254px;
-    height: 145px;
-}
-
-.projectFrame:hover iframe {
-    -webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-     transform:scale(1.25);
-
-}
-
+/*home buttons animation*/
 .scale {
     -webkit-transition: all 1.15s ease; /* Safari and Chrome */
     -moz-transition: all 1.15s ease; /* Firefox */
@@ -367,7 +338,90 @@ img {
      transform:scale(1.1);
 }
 
+/*.projectFrame {
+width: 254px;
+height: 145px;
 
+}*/
+
+.projectName {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 145px;
+    background-color: rgba(232, 53, 86, 1);
+    color: #FFFFFF;
+    font-size: 30px;
+    margin:0;
+}
+
+
+/*project modal window */
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 600px;
+    height:auto;
+    position: relative;
+    margin: 3% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+
+.modalDialog iframe {
+    margin: 0 auto;
+    width:600px;
+    height:800px;
+
+
+}
 
 /*
  * Remove text-shadow in selection highlight:
