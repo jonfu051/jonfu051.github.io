@@ -287,6 +287,8 @@ ul li {
     padding-right: 15px;
     padding-left: 15px;
     display: inline-block;
+    vertical-align: top;
+
 }
 
 .portfolio-item {
@@ -419,9 +421,8 @@ height: 145px;
     margin: 0 auto;
     width:600px;
     height:800px;
-
-
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
