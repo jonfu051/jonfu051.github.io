@@ -194,9 +194,18 @@ a {
 
 .pFont{
     font-family: 'Bitter', serif;
-    font-size: 13px;
-    margin-top: 30px;
+    font-size: 17px;
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+.boldfont{
+    font-weight: bold;
+}
+
+.quotation {
+    margin-top:50px;
+    margin-bottom: 0;
 }
 
 .pageTitle {
