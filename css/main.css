@@ -47,7 +47,7 @@ a {
     height: 160px;
     width: 100%;
     position: relative;
-    left: 50px;
+    left: 40px;
 }
 
 .navTop {
@@ -86,7 +86,7 @@ a {
     color: #7d26cd;
 }
 
-#profilePic {
+.profilePic {
 
     height: 360px;
     border-radius: 50%;
@@ -235,7 +235,7 @@ a {
 
 .mainContent {
     position: relative;
-    left:50px;
+    left:40px;
     font-size: 14px;
 }
 
@@ -340,12 +340,6 @@ img {
      transform:scale(1.1);
 }
 
-/*.projectFrame {
-width: 254px;
-height: 145px;
-
-}*/
-
 .projectName {
     display: block;
     max-width: 100%;
@@ -382,12 +376,13 @@ height: 145px;
     pointer-events: auto;
 }
 
+
 .modalDialog > div {
+
     width: 600px;
     height:auto;
     position: relative;
-    margin: 3% auto;
-    padding: 5px 20px 13px 20px;
+    margin: 2% auto;
     border-radius: 10px;
     background: #fff;
     background: -moz-linear-gradient(#fff, #999);
@@ -414,7 +409,9 @@ height: 145px;
     box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background: #00d9ff; }
+.close:hover {
+    background: #00d9ff;
+}
 
 
 .modalDialog iframe {
