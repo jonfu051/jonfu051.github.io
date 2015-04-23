@@ -239,7 +239,13 @@ a {
     display:inline-blcok;
     line-height: 85px;
     margin-right: 20px;
+}
 
+.social p {
+    display: inline-block;
+    color: rgb(131,131,131);
+    margin-right: 20px;
+    font-family: 'Bitter', serif;
 }
 
 .mainContent {
