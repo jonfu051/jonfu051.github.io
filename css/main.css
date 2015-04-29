@@ -50,6 +50,10 @@ a {
     left: 40px;
 }
 
+.logo a:visited {
+    color:inherit;
+}
+
 .navTop {
     position: absolute;
     right:0px;
@@ -321,10 +325,15 @@ img {
 
 
 .three-colrow a {
-  font-family: Courier New;
-  font-weight: bold;
-
+    font-family: Courier New;
+    font-weight: bold;
+    color: rgb(242, 116, 5);
 }
+
+.three-colrow a:hover {
+    color: #7d26cd;
+}
+
 
 .three-colrow p {
     font-family: 'Bitter', serif;
