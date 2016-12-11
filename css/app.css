@@ -25,6 +25,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 800px;
+  border-radius: 10px;
   text-align: center;
   padding: 40px 10px;
   background-color: #222;
