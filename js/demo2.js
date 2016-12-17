@@ -1,28 +1,39 @@
 new Vue({
-    el:'#todo',
+  el:'#todo',
   data:{
-    firstSelected: 'Choose a blood type',
+    firstSelected: '',
     types:[
-        {value:'Choose a blood type'},
-        {value:'A',checked:false},
-      {value:'B',checked:false},
-      {value:'O',checked:false},
-      {value:'AB',checked:false}
+      {text:'A',checked:false},
+      {text:'B',checked:false},
+      {text:'O',checked:false},
+      {text:'AB',checked:false}
     ],
-    secondSelected: 'Choose a percentage',
+    secondSelected: '',
     pers:[
-        {value:'Choose a percentage'},
-        {value:'0%',checked:false},
-      {value:'10%',checked:false},
-      {value:'20%',checked:false},
-      {value:'30%',checked:false},
-      {value:'40%',checked:false},
-      {value:'50%',checked:false},
-      {value:'60%',checked:false},
-      {value:'70%',checked:false},
-      {value:'80%',checked:false},
-      {value:'90%',checked:false},
-      {value:'100%',checked:false}
+      {text:'0%',checked:false},
+      {text:'10%',checked:false},
+      {text:'20%',checked:false},
+      {text:'30%',checked:false},
+      {text:'40%',checked:false},
+      {text:'50%',checked:false},
+      {text:'60%',checked:false},
+      {text:'70%',checked:false},
+      {text:'80%',checked:false},
+      {text:'90%',checked:false},
+      {text:'100%',checked:false}
     ]
+  },
+  methods:{
+      addList:function(){
+          var a = this.firstSelected;
+          var b = this.secondSelected;
+          if(a && b){
+
+              console.log(a, b);
+
+          }else {
+            alert("please insert data")
+          }
+      }
   }
 });

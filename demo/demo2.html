@@ -7,28 +7,46 @@
         <meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport' />
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/app.css">
+        <style>
+            .addList {
+                display: inline-block;
+                width:100px;
+                height:35px;
+                line-height:35px;
+                background-color:#DADADA;
+                color:#fff;
+                border-radius:10px;
+                text-align:center;
+            }
+            .selected {
+                color:#222;
+            }
+        </style>
     </head>
     <body>
         <div class="wrapper">
           <h1>Demo 2</h1>
           <div class="container" id="todo">
-            <select v-model="firstSelected">
-              <option v-for="type in types" v-bind:value="type.value">
-                {{ type.value }}
+            <select v-model="firstSelected" class="selected">
+              <option value="">Choose a blood type</option>
+              <option v-for="type in types" v-bind:value="type.text" value="" v-if="type.checked == false">
+                {{ type.text }}
               </option>
             </select>
-             <select v-model="secondSelected">
-              <option v-for="per in pers" v-bind:value="per.value">
-                {{ per.value }}
+             <select v-model="secondSelected" class="selected">
+               <option value="">Choose a percentage</option>
+              <option v-for="per in pers" v-bind:value="per.text" value="">
+                {{ per.text }}
               </option>
             </select>
             <p>Blood Type: {{ firstSelected }}</p>
             <p>Percentage: {{ secondSelected }}</p>
-            <pre>{{ $data }}</pre>
+            <div class="addList" v-on:click="addList">ADD</div>
+            <div class="btn_section">
+              <a class="btn_base yellow" href="/demohome.html">Back to demo home Page</a>
+            </div>
           </div>
-          <div class="btn_section">
-            <a class="btn_base yellow" href="/demohome.html">Back to demo home Page</a>
-          </div>
+
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
