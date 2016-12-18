@@ -42,6 +42,13 @@
             <p>Blood Type: {{ firstSelected }}</p>
             <p>Percentage: {{ secondSelected }}</p>
             <div class="addList" v-on:click="addList">ADD</div>
+            <ul class="list">
+              <li v-for="option in optionList">
+                <span>{{option.type}}</span>
+                <span>{{option.number}}</span>
+                <button class="delete" v-on:click="removeList(option)">X</button>
+              </li>
+            </ul>
             <div class="btn_section">
               <a class="btn_base yellow" href="/demohome.html">Back to demo home Page</a>
             </div>
