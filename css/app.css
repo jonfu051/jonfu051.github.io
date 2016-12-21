@@ -99,6 +99,87 @@ a {
   display: block;
 }
 
+.backToHomeBTn {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background: #F8C443;
+    color: #333;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 55px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+.vueWrap {
+    height: 450px;
+}
+.demoTitle {
+    margin: 20px 0;
+}
+.rowTitle {
+    display: inline-block;
+}
+.listTitle {
+    margin: 10px 0;
+    font-size: 20px;
+}
+.addList {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width:100px;
+    height:35px;
+    line-height:35px;
+    background-color:#F8C443;
+    color:#fff;
+    border-radius:10px;
+    text-align:center;
+}
+.selected {
+    margin: 20px 0;
+    width: 200px;
+    font-size: 16px;
+    color:#222;
+}
+.margin_left_space {
+    margin-left: 30px;
+}
+ul,li {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.list {
+    position: relative;
+}
+.list span {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+.listSpace{
+    margin: 10px 0;
+}
+.deleteBtn {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    background: #F8C443;
+    color: #fff;
+    border-radius: 50%;
+}
+
 @-webkit-keyframes super-rainbow {
   0% {
     color: #DADADA;

@@ -7,54 +7,46 @@
         <meta content='width=device-width, initial-scale=1.0, user-scalable=0' name='viewport' />
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/app.css">
-        <style>
-            .addList {
-                display: inline-block;
-                width:100px;
-                height:35px;
-                line-height:35px;
-                background-color:#DADADA;
-                color:#fff;
-                border-radius:10px;
-                text-align:center;
-            }
-            .selected {
-                color:#222;
-            }
-        </style>
     </head>
     <body>
-        <div class="wrapper">
-          <h1>Demo 2</h1>
+        <div class="wrapper vueWrap">
+          <h1 class="demoTitle">Vue Demo</h1>
           <div class="container" id="todo">
-            <select v-model="firstSelected" class="selected">
-              <option value="">Choose a blood type</option>
-              <option v-for="type in types" v-bind:value="type.text" value="" v-if="type.checked == false">
-                {{ type.text }}
-              </option>
-            </select>
-             <select v-model="secondSelected" class="selected">
-               <option value="">Choose a percentage</option>
-              <option v-for="per in pers" v-bind:value="per.text" value="">
-                {{ per.text }}
-              </option>
-            </select>
-            <p>Blood Type: {{ firstSelected }}</p>
-            <p>Percentage: {{ secondSelected }}</p>
-            <div class="addList" v-on:click="addList">ADD</div>
-            <ul class="list">
-              <li v-for="option in optionList">
-                <span>{{option.type}}</span>
-                <span>{{option.number}}</span>
-                <button class="delete" v-on:click="removeList(option)">X</button>
-              </li>
-            </ul>
-            <div class="btn_section">
-              <a class="btn_base yellow" href="/demohome.html">Back to demo home Page</a>
-            </div>
+<!--             <p>Blood Type: {{ firstSelected }}</p>
+            <p>Percentage: {{ secondSelected }}</p> -->
+                <ul class="list">
+                    <li>
+                        <div class="rowTitle">
+                            <select v-model="firstSelected" class="selected">
+                                <option value="">Choose a blood type</option>
+                                <option v-for="type in types" v-bind:value="type.text" value="" v-if="type.checked == false">
+                                {{ type.text }}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="rowTitle margin_left_space">
+                             <select v-model="secondSelected" class="selected">
+                                <option value="">Choose a percentage</option>
+                                <option v-for="per in pers" v-bind:value="per.text" value="">
+                                {{ per.text }}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="addList" v-on:click="addList">ADD</div>
+                    </li>
+                    <li>
+                        <span class="listTitle">Blood Type</span>
+                        <span class="listTitle">Percentage</span>
+                    </li>
+                    <li v-for="option in optionList" class="listSpace">
+                        <span>{{option.type}}</span>
+                        <span>{{option.number}}</span>
+                        <div class="deleteBtn" v-on:click="removeList(option)">X</div>
+                    </li>
+                </ul>
           </div>
-
         </div>
+        <a class="backToHomeBTn" href="/demohome.html">Back to demo home Page</a>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../js/demo2.js"></script>
