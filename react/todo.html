@@ -3,9 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <title>my todo app with React</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <style>
+            body {
+                background-color: #000;
+            }
+            #app {
+                margin: 50px auto 0;
+                width: 400px;
+                font-size: 15px;
+            }
+            .todoListWrap .inputBox input {
+              padding: 10px;
+              font-size: 16px;
+              border: 2px solid #FFF;
+            }
+            .todoListWrap .inputBox button {
+              padding: 10px;
+              font-size: 16px;
+              margin: 10px;
+              background-color: #0066FF;
+              color: #FFF;
+              border: 2px solid #0066FF;
+            }
+
+            .todoListWrap .inputBox button:hover {
+              background-color: #003399;
+              border: 2px solid #003399;
+              cursor: pointer;
+            }
+            .listRow {
+                margin: 15px 0;
+                padding: 0;
+                color: #fff;
+            }
+            .listRow li {
+                position: relative;
+                margin-bottom: 15px;
+                padding: 10px;
+                min-height: 30px;
+                line-height: 30px;
+                list-style: none;
+                background-color: #666;
+                border-radius: 10px;
+            }
+            .deleteBtn {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 20px;
+                color: gold;
+            }
+        </style>
     </head>
     <body>
         <div id="app"></div>
-        <script src="/js/todo.js"></script>
+        <script src="/build/main.js"></script>
     </body>
 </html>

@@ -1,13 +1,31 @@
 module.exports = {
     entry: [
-        './js/todo.js'
+        './js/todoApp.js'
     ],
+    module: {
+        rules: [
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: "babel-loader"
+        },
+        {
+            test: /\.jsx$/,
+            exclude: /node_modules/,
+            loader: "babel-loader"
+        }]
+    },
+    resolve: {
+        extensions: ['*', '.js', '.jsx']
+    },
     output: {
-        path: __dirname + '/build/',
-        publicPath: '/',
+        path: __dirname + '/build',
+        // publicPath: '/',
+        publicPath: '/build/',
         filename: '[name].js'
     },
     devServer: {
+        // contentBase: './react',
         contentBase: __dirname,
     }
 };

@@ -2,7 +2,7 @@
   "name": "jonfu051.github.io",
   "description": "Johnny Fu portfolio website",
   "scripts": {
-    "start": "webpack-dev-server --hot --progress --colors --config ./webpack.config.js",
+    "start": "webpack-dev-server --progress --colors --config ./webpack.config.js",
     "build": "webpack --config ./webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,13 @@
   },
   "keywords": [],
   "author": "",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/jonfu051/jonfu051.github.io/issues"
   },
@@ -24,5 +31,10 @@
     "babel-preset-stage-2": "^6.24.1",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }

@@ -131,11 +131,14 @@ a {
     float:right;
 }
 
+.circleWrap {
+    font-size: 0;
+}
+
 .round-button {
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    text-decoration: none;
     display: inline-block;
     margin: 0px 20px 0px 0px ;
 
@@ -151,9 +154,8 @@ a {
 .round-button a {
     display: block;
     width: 100%;
-    line-height: 139px;
-    font-size: 15px;
-
+    line-height: 118px;
+    font-size: 13px;
     text-align:center;
     color:#FFFFFF;
     font-weight:bold;
@@ -193,6 +195,10 @@ a {
 
 .round-button.yellow-bg {
     background-color: rgba(209, 200, 37, 1);
+}
+
+.round-button.black-bg {
+    background-color: #000;
 }
 
 .pFont{
